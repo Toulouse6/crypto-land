@@ -1,0 +1,387 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e6edf3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#bodyContainer {
+    flex: 1;
+    justify-content: center;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Header */
+
+.div-container {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* Menu */
+
+nav {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    gap: 50px;
+}
+
+nav a {
+    font-family: 'myFont', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: #71797E;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav a:hover,
+nav a.active {
+    font-family: 'myFontB', sans-serif;
+}
+
+
+/* Search Box */
+
+#searchContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#searchInput {
+    font-size: large;
+    padding-left: 20px;
+    border: 1px solid #bdccd5;
+    height: 40px;
+    width: 350px;
+    border-radius: 30px;
+    display: none;
+    margin: 40px auto;
+}
+
+
+/* Coin Cards */
+
+
+#bodyContainer {
+    justify-content: center;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    bottom: 10%;
+}
+
+.card {
+    text-align: left;
+    border: 1px solid white;
+    margin: 20px 0 0 20px;
+    padding: 15px;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(50, 50, 50, 0.1);
+    display: inline-block;
+    background-image: url("assets/images/white-bg2-2.png");
+    background-position: center center;
+    background-size: cover;
+    overflow: auto;
+}
+
+.coinName {
+    font-size: large;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.coinSymbol {
+    font-size: small;
+    text-transform: uppercase;
+    color: #484848;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.coinImg {
+    position: absolute;
+    margin: -25px 0 0 190px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Info Button */
+
+.moreInfo {
+    margin-top: 5px;
+    margin-left: -5px;
+    font-size: x-small;
+    color: rgb(59, 59, 59);
+    font-family: ("myFontP", sans-serif);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.moreInfo:focus,
+.moreInfo:hover {
+    color: rgb(59, 59, 59);
+}
+
+.moreInfo:focus:after {
+    width: 100%;
+    left: 0%;
+}
+
+.moreInfo:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(59, 59, 59);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.currencies {
+    margin: 20px 0 0 5px;
+}
+
+.currencies p {
+    margin-top: 3px;
+    font-size: xx-small;
+    line-height: 1px;
+}
+
+
+/* Modal */
+
+.modal-dialog {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.modal-content {
+    text-align: left;
+    margin-top: 100px;
+    background-color: #e6edf3;
+    width: 400px;
+    height: 250px;
+}
+
+.modal-body>p {
+    margin: 35px auto 20px auto;
+    color: #333A45;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'myFontP', sans-serif;
+    text-align: center;
+}
+
+.modal-dialog button {
+    font-family: 'myFontB', sans-serif;
+    background-color: #bdccd5;
+    border: none;
+    color: #333A45;
+}
+
+.modal-dialog button:hover {
+    border: solid 1px #bdccd5;
+    background-color: white;
+    color: #333A45;
+}
+
+.errorText {
+    margin-top: 50px;
+    font-size: x-large;
+    color: #71797E;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Reports */
+
+.reportErrorArea {
+    max-width: 800px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    border: 1px solid #bdccd5;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.229);
+    height: 250px;
+    padding: 0 20px;
+}
+
+.reportErrorArea h2 {
+    color: #71797E;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: x-large;
+    font-family: 'myFont', sans-serif;
+}
+
+.reportErrorArea h3 {
+    margin: 0;
+    font-weight: 300;
+    font-size: large;
+    width: 100%;
+}
+
+.canvasjs-chart-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    background: transparent;
+    position: relative;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+/* About */
+
+.aboutContainer {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #bdccd5;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.229);
+    gap: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.introBox {
+    width: 100%;
+    height: 100%;
+    color: #71797E;
+    text-align: left;
+}
+
+.introBox h2 {
+    padding-top: 10px;
+    font-size: x-large;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #71797E;
+    font-family: 'myFont', sans-serif;
+
+}
+
+
+.introBox p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-family: ("myFontP", sans-serif);
+}
+
+.photoContainer {
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+    color: #71797E;
+}
+
+#headShot {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 240px;
+    border: 1px solid #bdccd5;
+    border-radius: 50%;
+}
+
+/* Footer */
+
+footer {
+    height: 150px;
+    background-color: #333A45;
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'myFont';
+    src: url(assets/fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'myFontP';
+    src: url(assets/fonts/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'myFontB';
+    src: url(assets/fonts/Raleway-Medium.ttf);
+}
