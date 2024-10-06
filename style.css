@@ -357,7 +357,7 @@ nav a.active {
 /* Footer */
 
 footer {
-    height: 150px;
+    min-height: 280px;
     background-color: #333A45;
     color: white;
     font-size: small;
