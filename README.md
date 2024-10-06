@@ -1,4 +1,5 @@
 ## CryptoLand
+[GitHub page](https://toulouse6.github.io/crypto-land/)
 
 CryptoLand is a cryptocurrency tracking app that allows users to select the favorite coins and view their live stats, including price data in multiple currencies.
 
@@ -11,5 +12,7 @@ CryptoLand is a cryptocurrency tracking app that allows users to select the favo
 - HTML/CSS
 - JavaScript
 - Bootstrap
+- Canva.js
+- Model.js
 - CoinGecko API
 
