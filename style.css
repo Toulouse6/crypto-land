@@ -96,8 +96,6 @@ nav a.active {
 
 #bodyContainer {
     justify-content: center;
-    width: 80%;
-    margin: 30px auto;
     text-align: center;
     bottom: 10%;
 }
