@@ -14,8 +14,8 @@ body {
 #bodyContainer {
     flex: 1;
     justify-content: center;
-    width: 80%;
-    margin: 40px auto;
+    width: 100%;
+    margin: 30px -10px;
     text-align: center;
 }
 
