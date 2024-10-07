@@ -15,8 +15,11 @@ body {
     flex: 1;
     justify-content: center;
     width: 80%;
-    margin: 40px auto;
+    margin: 30px auto;
     text-align: center;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
 /* Header */
@@ -102,16 +105,15 @@ nav a.active {
     bottom: 10%;
 }
 
+/* Card Styles */
 .card {
     text-align: left;
     border: 1px solid white;
-    margin: 20px 0 0 20px;
     padding: 15px;
-    width: 250px;
+    width: calc(50% - 20px);
     height: 200px;
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgba(50, 50, 50, 0.1);
-    display: inline-block;
     background-image: url("assets/images/white-bg2-2.png");
     background-position: center center;
     background-size: cover;
@@ -384,4 +386,15 @@ footer {
 @font-face {
     font-family: 'myFontB';
     src: url(assets/fonts/Raleway-Medium.ttf);
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    #bodyContainer {
+        flex-direction: row; 
+    }
+
+    .card {
+        width: calc(50% - 20px); 
+    }
 }
