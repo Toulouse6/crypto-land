@@ -327,20 +327,20 @@
             searchInput.style.display = "none";
             bodyContainer.innerHTML = `
 
-            <div class="aboutContainer">
-            <div class="introBox">
-                 <h2>Hey there! I’m Tal.</h2>
+        <div class="aboutContainer">
+        <div class="introBox">
+        <h2>About CryptoLand</h2>
         <p>
-        A Tech Marketer turned Full-Stack Developer with 9+ years of experience leading digital projects. 
+        CryptoLand is a cryptocurrency tracking app that allows users to select the favorite coins and view their live stats, including price data in multiple currencies.
         <br><br>
-        For the past 5 years at UVeye, I’ve developed digital platforms and marketing tools for a cutting-edge computer vision company, collaborating with industry leaders like Amazon, GM, and Toyota.
+        Select up to 5 cryptocurrencies to track their live price.
         <br><br>
-        After completing Full-Stack Development training, I’m ready to apply my skills in building and optimizing web applications for my next challenge.
+        View real-time price data for selected coins in USD, EUR, and ILS.
         </p>
             </div>
             <div class="photoContainer">
                 <img id="headShot" src="assets/images/tal argaman.jpg" />
-                `;
+                `;      
         } else {
             console.error('aboutContainer not found in HTML');
         }
