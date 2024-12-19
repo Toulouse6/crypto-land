@@ -14,7 +14,7 @@ CryptoLand is a cryptocurrency tracking app that allows users to select the favo
 
 **Technologies:**
 
-- **TypeScript**
+- **JavaScript ES6**
 - **CSS3**
 - **HTML5**
 - **CoinGecko API**
