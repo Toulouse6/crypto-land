@@ -1,6 +1,6 @@
 ## CryptoLand
 
-<img align="right" src="./src/assets/cryptoland-screenshot.png" alt="cryptoland-screenshot" width="350">
+<img align="right" src="1-cryptoland.png" alt="cryptoland-screenshot" width="350">
 
 CryptoLand is a cryptocurrency tracking app that allows users to select the favorite coins and view their live stats, including price data in multiple currencies.
 
